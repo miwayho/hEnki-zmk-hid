@@ -50,6 +50,20 @@
         };
     };
 
+    layer_callbacks {
+        compatible = "elpekenin,layer-callback"
+        layer_on {
+            layer = <1>; 
+            event = "on-activation";
+            bindings = <&kp F13>; 
+        };
+        layer_off {
+            layer = <1>; 
+            event = "on-deactivation";
+            bindings = <&kp F14>; 
+        };
+    };
+
         //╭──────╭──────┬──────┬──────┬──────┬──────╮   ╭──────┬──────┬──────┬──────┬──────╮──────╮
         //│  0   │  1   │  2   │  3   │  4   │  5   │   │  6   │  7   │  8   │  9   │  10  │  11  │
         //├──────├──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┤──────┤
